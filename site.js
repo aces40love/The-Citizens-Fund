@@ -17,7 +17,7 @@
       menuToggle.focus();
     }
   });
-  window.matchMedia('(min-width: 961px)').addEventListener('change', (event) => {
+  window.matchMedia('(min-width: 1151px)').addEventListener('change', (event) => {
     if (event.matches) setMenu(false);
   });
   const creditToggle = document.querySelector('.credits-toggle');
