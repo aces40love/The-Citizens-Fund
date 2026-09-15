@@ -2,6 +2,8 @@
 
 A complete, responsive redesign of the Citizens Bank Foundation page, presented under its existing **The Citizens Fund** identity. Created September 15, 2026.
 
+**[View the live website preview](https://aces40love.github.io/The-Citizens-Fund/)**
+
 ![The Citizens Fund homepage redesign](previews/desktop-hero.png)
 
 [View the complete desktop design](previews/desktop.png) · [View the mobile design](previews/mobile.png)
@@ -50,7 +52,7 @@ The source was https://cbnbankprod.wpenginepowered.com/citizens-bank-foundation/
 
 The original Workforce Readiness paragraph repeated the Affordable Housing paragraph. This redesign uses general workforce copy; the Fund should confirm specific program language before publication. No grant totals, beneficiary claims, founding date, donation processor, deadlines, eligibility rules, or foundation tax status have been invented. See `references/content-notes.md`.
 
-The site is ready for review. Publishing still requires a hosting destination, confirmation of the final copy, and connecting the inquiry to the Fund’s approved submission system. Remove the preview’s `noindex, nofollow` metadata when the final site is approved for indexing. Do not upload `node_modules`, research files, tests, or local inquiry drafts to a public host.
+The public design preview is hosted on GitHub Pages. Updates pushed to `main` automatically publish the website files and assets through `.github/workflows/pages.yml`; research files, tests, and local inquiry drafts are excluded from the deployment. A production launch still requires confirmation of the final copy and connecting the inquiry to the Fund’s approved submission system. Remove the preview’s `noindex, nofollow` metadata when the final site is approved for indexing.
 
 Photograph credits and licenses are in `assets/asset-sources.md`. The original Fund logo came from the supplied website. Font licenses are included in `assets/fonts/`.
 

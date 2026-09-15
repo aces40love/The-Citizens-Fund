@@ -8,3 +8,4 @@ playwright-report/
 !.env.example
 /references/original-page.html
 citizens-fund-inquiry*.txt
+/_site/
