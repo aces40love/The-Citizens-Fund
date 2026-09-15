@@ -1,0 +1,13 @@
+{
+  "name": "citizens-fund-redesign",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A locally hosted Citizens Fund website redesign",
+  "type": "module",
+  "scripts": {
+    "start": "node server.mjs",
+    "check": "node --check site.js && node --check inquiry.js && node --check server.mjs",
+    "test": "node tests/browser-check.mjs"
+  },
+  "devDependencies": {"@playwright/test": "^1.58.0", "@axe-core/playwright": "^4.11.0"}
+}

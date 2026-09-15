@@ -1,0 +1,10 @@
+node_modules/
+.DS_Store
+test-results/
+playwright-report/
+*.log
+.env
+.env.*
+!.env.example
+/references/original-page.html
+citizens-fund-inquiry*.txt

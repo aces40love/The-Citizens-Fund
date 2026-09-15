@@ -1,0 +1,74 @@
+{
+  "results": [
+    {
+      "name": "desktop: layout, images, fonts, and anchor targets",
+      "status": "passed"
+    },
+    {
+      "name": "desktop: WCAG accessibility",
+      "status": "passed"
+    },
+    {
+      "name": "tablet: layout, images, fonts, and anchor targets",
+      "status": "passed"
+    },
+    {
+      "name": "tablet: WCAG accessibility",
+      "status": "passed"
+    },
+    {
+      "name": "tablet: mobile navigation opens, closes, anchors, Escape",
+      "status": "passed"
+    },
+    {
+      "name": "tablet: inquiry fits and Escape unlocks the page",
+      "status": "passed"
+    },
+    {
+      "name": "mobile: layout, images, fonts, and anchor targets",
+      "status": "passed"
+    },
+    {
+      "name": "mobile: WCAG accessibility",
+      "status": "passed"
+    },
+    {
+      "name": "mobile: mobile navigation opens, closes, anchors, Escape",
+      "status": "passed"
+    },
+    {
+      "name": "mobile: inquiry fits and Escape unlocks the page",
+      "status": "passed"
+    },
+    {
+      "name": "narrow: layout, images, fonts, and anchor targets",
+      "status": "passed"
+    },
+    {
+      "name": "narrow: WCAG accessibility",
+      "status": "passed"
+    },
+    {
+      "name": "narrow: mobile navigation opens, closes, anchors, Escape",
+      "status": "passed"
+    },
+    {
+      "name": "narrow: inquiry fits and Escape unlocks the page",
+      "status": "passed"
+    },
+    {
+      "name": "Inquiry: full validation, conditional fields, retained answers, safe review, local download",
+      "status": "passed"
+    },
+    {
+      "name": "Direct file opening: styles, images, local fonts, and inquiry work without a server",
+      "status": "passed"
+    },
+    {
+      "name": "No browser errors, failed assets, external requests, or submissions",
+      "status": "passed"
+    }
+  ],
+  "failures": [],
+  "requests": 50
+}

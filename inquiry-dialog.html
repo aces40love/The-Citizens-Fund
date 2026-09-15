@@ -1,0 +1,180 @@
+<dialog id="inquiry-dialog" class="inquiry-dialog" aria-labelledby="inquiry-title" aria-describedby="inquiry-intro">
+  <div class="dialog-heading">
+    <div>
+      <p class="eyebrow">A stronger Nashville starts with a conversation</p>
+      <h2 id="inquiry-title">Tell us what you’re building.</h2>
+    </div>
+    <button type="button" class="dialog-close" data-close-inquiry aria-label="Close inquiry">&#215;</button>
+  </div>
+  <p id="inquiry-intro" class="form-note">Prepare your inquiry here, then submit it through the Citizens Fund’s official form.</p>
+  <ol class="inquiry-progress" aria-label="Inquiry progress">
+    <li aria-current="step"><span>01</span> Organization</li>
+    <li><span>02</span> Focus &amp; details</li>
+    <li><span>03</span> Funding request</li>
+    <li><span>04</span> Impact &amp; timeline</li>
+  </ol>
+  <form id="inquiry-form" method="dialog" novalidate>
+    <p class="form-note">Fields marked * are required. Your answers stay in this page until you choose to download them.</p>
+    <section class="inquiry-step" data-step="0" aria-labelledby="inquiry-step-0">
+      <h3 id="inquiry-step-0" tabindex="-1">Your organization</h3>
+      <div class="field-row">
+        <div class="field">
+          <label for="inquiry-organization" class="field-label">Organization name *</label>
+          <input id="inquiry-organization" name="organization" autocomplete="organization" required aria-describedby="error-organization">
+          <span id="error-organization" class="field-error" hidden></span>
+        </div>
+        <div class="field">
+          <label for="inquiry-website" class="field-label">Website <span>(optional)</span></label>
+          <input id="inquiry-website" name="website" type="url" placeholder="https://example.org" autocomplete="url" aria-describedby="error-website">
+          <span id="error-website" class="field-error" hidden></span>
+        </div>
+      </div>
+      <fieldset class="field" data-required-group="organizationType">
+        <legend class="field-label">Organization type *</legend>
+        <p class="form-note">Select all that apply.</p>
+        <div class="checkbox-grid">
+          <label class="checkbox-option"><input type="checkbox" name="organizationType" value="Nonprofit" aria-describedby="error-organizationType"> Nonprofit</label>
+          <label class="checkbox-option"><input type="checkbox" name="organizationType" value="Developer / Housing Partner" aria-describedby="error-organizationType"> Developer / housing partner</label>
+          <label class="checkbox-option"><input type="checkbox" name="organizationType" value="Community Organization" aria-describedby="error-organizationType"> Community organization</label>
+          <label class="checkbox-option"><input type="checkbox" name="organizationType" value="Educational Institution" aria-describedby="error-organizationType"> Educational institution</label>
+          <label class="checkbox-option"><input type="checkbox" name="organizationType" value="Other" aria-describedby="error-organizationType"> Other</label>
+        </div>
+        <span id="error-organizationType" class="field-error" hidden></span>
+      </fieldset>
+      <div class="field" data-other-field="organizationType" hidden>
+        <label for="inquiry-organizationOther" class="field-label">Other organization type *</label>
+        <input id="inquiry-organizationOther" name="organizationOther" disabled aria-describedby="error-organizationOther">
+        <span id="error-organizationOther" class="field-error" hidden></span>
+      </div>
+      <h4>Primary contact</h4>
+      <div class="field-row">
+        <div class="field">
+          <label for="inquiry-contact" class="field-label">Full name *</label>
+          <input id="inquiry-contact" name="contact" autocomplete="name" required aria-describedby="error-contact">
+          <span id="error-contact" class="field-error" hidden></span>
+        </div>
+        <div class="field">
+          <label for="inquiry-role" class="field-label">Title / role *</label>
+          <input id="inquiry-role" name="role" autocomplete="organization-title" required aria-describedby="error-role">
+          <span id="error-role" class="field-error" hidden></span>
+        </div>
+      </div>
+      <div class="field-row">
+        <div class="field">
+          <label for="inquiry-email" class="field-label">Email address *</label>
+          <input id="inquiry-email" name="email" type="email" autocomplete="email" required aria-describedby="error-email">
+          <span id="error-email" class="field-error" hidden></span>
+        </div>
+        <div class="field">
+          <label for="inquiry-phone" class="field-label">Phone number *</label>
+          <input id="inquiry-phone" name="phone" type="tel" autocomplete="tel" required aria-describedby="error-phone">
+          <span id="error-phone" class="field-error" hidden></span>
+        </div>
+      </div>
+    </section>
+    <section class="inquiry-step" data-step="1" aria-labelledby="inquiry-step-1" hidden>
+      <h3 id="inquiry-step-1" tabindex="-1">Where your work makes a difference</h3>
+      <fieldset class="field" data-required-group="focus">
+        <legend class="field-label">Area of focus *</legend>
+        <p class="form-note">Select all that apply.</p>
+        <div class="checkbox-grid">
+          <label class="checkbox-option"><input type="checkbox" name="focus" value="Affordable Housing" aria-describedby="error-focus"> Affordable housing</label>
+          <label class="checkbox-option"><input type="checkbox" name="focus" value="Financial Literacy" aria-describedby="error-focus"> Financial literacy</label>
+          <label class="checkbox-option"><input type="checkbox" name="focus" value="Workforce Readiness" aria-describedby="error-focus"> Workforce readiness</label>
+          <label class="checkbox-option"><input type="checkbox" name="focus" value="Community Development" aria-describedby="error-focus"> Community development</label>
+        </div>
+        <span id="error-focus" class="field-error" hidden></span>
+      </fieldset>
+      <div class="field">
+        <label for="inquiry-description" class="field-label">Briefly describe your organization *</label>
+        <p id="description-hint" class="form-note">One to three sentences about your mission and work.</p>
+        <textarea id="inquiry-description" name="description" rows="4" required aria-describedby="description-hint error-description"></textarea>
+        <span id="error-description" class="field-error" hidden></span>
+      </div>
+      <div class="field">
+        <label for="inquiry-community" class="field-label">Who do you serve? *</label>
+        <textarea id="inquiry-community" name="community" rows="3" required aria-describedby="error-community"></textarea>
+        <span id="error-community" class="field-error" hidden></span>
+      </div>
+    </section>
+    <section class="inquiry-step" data-step="2" aria-labelledby="inquiry-step-2" hidden>
+      <h3 id="inquiry-step-2" tabindex="-1">Your project and funding needs</h3>
+      <div class="field">
+        <label for="inquiry-project" class="field-label">What are you working on? *</label>
+        <textarea id="inquiry-project" name="project" rows="4" required aria-describedby="error-project"></textarea>
+        <span id="error-project" class="field-error" hidden></span>
+      </div>
+      <div class="field">
+        <label for="inquiry-support" class="field-label">What type of support are you seeking? *</label>
+        <select id="inquiry-support" name="support" required aria-describedby="error-support">
+          <option value="">Select a type of support</option>
+          <option>Grant funding</option><option>Partnership</option><option>Capital stack participation</option><option>Other</option>
+        </select>
+        <span id="error-support" class="field-error" hidden></span>
+      </div>
+      <div class="field" data-other-field="support" hidden>
+        <label for="inquiry-supportOther" class="field-label">Other type of support *</label>
+        <input id="inquiry-supportOther" name="supportOther" disabled aria-describedby="error-supportOther">
+        <span id="error-supportOther" class="field-error" hidden></span>
+      </div>
+      <div class="field">
+        <label for="inquiry-funding" class="field-label">Estimated funding need *</label>
+        <select id="inquiry-funding" name="funding" required aria-describedby="error-funding">
+          <option value="">Select a funding range</option>
+          <option value="Less than $25,000">Less than $25,000</option>
+          <option value="$25,000–$100,000">$25,000–$100,000</option>
+          <option value="$100,000–$500,000">$100,000–$500,000</option>
+          <option value="$500,000+">$500,000+</option>
+        </select>
+        <span id="error-funding" class="field-error" hidden></span>
+      </div>
+    </section>
+    <section class="inquiry-step" data-step="3" aria-labelledby="inquiry-step-3" hidden>
+      <h3 id="inquiry-step-3" tabindex="-1">The change you want to create</h3>
+      <div class="field">
+        <label for="inquiry-impact" class="field-label">What impact will this project have? *</label>
+        <textarea id="inquiry-impact" name="impact" rows="4" required aria-describedby="error-impact"></textarea>
+        <span id="error-impact" class="field-error" hidden></span>
+      </div>
+      <div class="field-row">
+        <div class="field">
+          <label for="inquiry-geography" class="field-label">Geographic area served *</label>
+          <input id="inquiry-geography" name="geography" placeholder="Neighborhood or region" required aria-describedby="error-geography">
+          <span id="error-geography" class="field-error" hidden></span>
+        </div>
+        <div class="field">
+          <label for="inquiry-stage" class="field-label">Project stage *</label>
+          <select id="inquiry-stage" name="stage" required aria-describedby="error-stage">
+            <option value="">Select a project stage</option>
+            <option>Early concept</option><option>Planning</option><option>Ready to launch</option><option>In progress</option>
+          </select>
+          <span id="error-stage" class="field-error" hidden></span>
+        </div>
+      </div>
+      <div class="field">
+        <label for="inquiry-timeline" class="field-label">Anticipated timeline <span>(optional)</span></label>
+        <input id="inquiry-timeline" name="timeline">
+      </div>
+      <div class="field">
+        <label for="inquiry-additional" class="field-label">Anything else you’d like us to know? <span>(optional)</span></label>
+        <textarea id="inquiry-additional" name="additional" rows="3"></textarea>
+      </div>
+    </section>
+    <p id="inquiry-validation" class="field-error" role="alert" hidden></p>
+    <div class="form-actions">
+      <button type="button" class="button button-outline" data-inquiry-back hidden>Back</button>
+      <button type="submit" class="button button-dark" data-inquiry-next>Continue <span aria-hidden="true">↗</span></button>
+    </div>
+  </form>
+  <section id="inquiry-review" class="inquiry-review" aria-labelledby="inquiry-review-title" hidden>
+    <h3 id="inquiry-review-title" tabindex="-1">Your inquiry, ready to take forward.</h3>
+    <p class="form-note">Review your answers below. Download a copy to reference while completing the Citizens Fund’s official form. Nothing has been submitted.</p>
+    <dl id="inquiry-summary"></dl>
+    <div class="form-actions">
+      <button type="button" class="button button-outline" data-inquiry-edit>Edit answers</button>
+      <button type="button" class="button button-outline" data-inquiry-download>Download inquiry</button>
+      <a class="button button-dark" href="https://cbnbankprod.wpenginepowered.com/citizens-bank-foundation/#gform_wrapper_3" target="_blank" rel="noopener noreferrer">Open official form <span aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></a>
+    </div>
+    <p id="inquiry-download-status" class="form-note" role="status"></p>
+  </section>
+</dialog>
